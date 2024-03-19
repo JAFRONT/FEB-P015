@@ -15,7 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { CalcularIdadeEmMesesPipe } from './calcular-idade-em-meses.pipe';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { ChartsModule } from 'ng2-charts';
+
 
 @NgModule({
   declarations: [
@@ -37,8 +37,7 @@ import { ChartsModule } from 'ng2-charts';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule,
-    ChartsModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
