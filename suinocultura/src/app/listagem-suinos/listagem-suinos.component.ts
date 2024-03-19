@@ -41,7 +41,10 @@
     suinoFormVisible: boolean = false;
 
 
-    constructor(private formBuilder: FormBuilder, private dataService: DataService) {
+    constructor(private formBuilder: FormBuilder,
+       private dataService: DataService,
+     
+       ) {
       this.suinoForm = this.formBuilder.group({
         brincoPai: [''],
         brincoMae: [''],
@@ -51,6 +54,7 @@
         status: ['']
       });
     }
+  
 
 
     
@@ -95,6 +99,11 @@
         this.suinoForm.reset(); // Reseta o formulário
       }
       
+
+      exibirMensagemSucesso(): void {
+        this.suinoSalvo = true;
+      }
+      
     
       suinoSelecionado: Suino | null = null;
       selecionarSuino(suino: Suino): void {
@@ -105,5 +114,7 @@
      
     
       }
+
+      
 
   }

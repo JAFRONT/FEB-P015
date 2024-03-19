@@ -7,7 +7,7 @@ import { catchError } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class DataService {
-  private apiUrl = 'http://localhost:4200/listagem-suinos';
+  private apiUrl = 'http://localhost:4200';
 
 
   constructor(private http: HttpClient) { }

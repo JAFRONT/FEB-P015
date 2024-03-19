@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-const port = 4000; // Porta ajustada para 4000
+const port = 4200; // Porta ajustada para 4000
 
 // Middleware para analisar o corpo das solicitações
 app.use(bodyParser.json());
